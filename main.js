@@ -8,6 +8,10 @@ ctx.rect(230, 30, 40, 90)
 ctx.fillStyle = '#ff00ff'
 ctx.fill()
 
+ctx.strokeStyle = '## ff00ff'
+ctx.arc(200, 100, 60, 0, Math.PI)
+ctx.stroke()
+
 
 // Franklin
 
