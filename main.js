@@ -1,61 +1,36 @@
-const canvas = document.getElementById('canvas')
-const ctx = canvas.getContext('2d')
+const canvas = document.querySelector('canvas')
+			const ctx = canvas.getContext('2d')
 
+			const size = 113
+			const x = 1 * size
+			const y = 2 * size
 
-// Mitchell 
-ctx.beginPath()
-ctx.rect(230, 30, 40, 90)
-ctx.fillStyle = '#ff00ff'
-ctx.fill()
+			// draw a square
+			ctx.beginPath()
+			ctx.rect(x, y, size, size)
+			ctx.fillStyle = 'tomato'
+			ctx.fill()
 
-ctx.strokeStyle = '## ff00ff'
-ctx.arc(200, 100, 60, 0, Math.PI)
-ctx.stroke()
+			// draw a circle 
+			ctx.beginPath()
+			// draw a complete circle
+			ctx.arc(x + size / 2, y + size / 2, 40, 0, Math.PI * 2)
+			ctx.fillStyle = '#333'
+			ctx.fill()
 
+			// Stroke a path
+			ctx.beginPath()
+			// draw half a circle
+			ctx.arc(x + size / 2, y + size / 2, 30, 0, Math.PI)
+			ctx.lineWidth = 3
+			ctx.strokeStyle = '#ffeeee'
+			ctx.stroke()
 
-// Franklin
-
-
-
-// Beck
-
-
-
-// John
-
-
-
-// Redi
-
-
-
-// Stasi
-
-
-
-// Aucoeur
-
-
-
-// Audi
-
-
-
-
-// Muhammad
-
-
-
-// Anthony
-
-
-
-// Betsy
-
-
-
-// Shaan
-
-
-
-// Farhan
+			// Draw some text
+			ctx.beginPath()
+			ctx.font = '18px Helvetica'
+			ctx.fillStyle = '#fff'
+			ctx.fillText('Hello', x + 8, y + 20)
+			
+			// Use the docs to figure out how to draw other things
+			// https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
