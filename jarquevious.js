@@ -1,3 +1,5 @@
+import ctx, { size } from './main.js'
+
 // Jarquevious Drawing
 
 //Rectangle
