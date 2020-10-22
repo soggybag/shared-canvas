@@ -1,4 +1,4 @@
-import ctx, { size } from './main.js'
+import ctx, { size, test, getLocation } from './main.js'
 
 const x = 1 * size
 const y = 2 * size
