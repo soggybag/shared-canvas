@@ -99,4 +99,25 @@ Go to your project GitHub.com go to the **Pull Requests** tab. Click the Green b
 
 ### Updating your from upstream
 
-Using 
+Git projects have branches. You'll always have a master branch and you might create other branches. 
+
+https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefbranchabranch
+
+An upstream branch can refer to a branch that belongs to source repo you forked. 
+
+https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefupstreambranchaupstreambranch
+
+Merge is the process of combining branches. Merges can have conflicts when it seems that same code has been edited in two places. If you get a merge conflict you'll have to manually edit code to resolve the conflict. 
+
+https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefmergeamerge
+
+To update your fork of this project you'll want to: Merge the upstream master branch with your master branch. 
+
+Using the command line follow the instructions here: 
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/syncing-a-fork
+
+Using GitHub Desktop follow these:
+
+https://stackoverflow.com/questions/46110615/how-to-sync-your-forked-repo-with-original-repo-in-github-desktop
+
