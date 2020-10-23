@@ -45,3 +45,58 @@ Find your name in the image below and adjust your drawing so that is draws withi
 
 ![grid map](notes/shared-canvas.png)
 
+## What to do
+
+- Fork this repo
+- Find your name on the grid
+- Make a new js file using your name
+- import the ctx and size from main
+- use the canvas API to draw in your area of the shared canvas
+- Test your work in the fork of the project
+- Updating index.html. Find your name in a comment and add a script tag that links to your JS file.
+- When you're happy and bug free create a pull request to incorporate your work into the original project
+
+### Fork
+
+A fork is a copy of the original project that is moved to your github account. 
+
+Click the Fork button in the upper right of the page. 
+
+### import code 
+
+Your JS file should use this code
+
+```JS
+import ctx, { size } from './main.js'
+ctx.restore()
+const x = 4 * size
+const y = 3 * size
+```
+
+The x and y properties here will provide the location of the upper left corner of the square where your drawing will reside. 
+
+Since the canvas context is shared your code may pick up styles or settings from other code. Use: 
+
+```js
+ctx.restore();
+```
+
+to reset the canvas context before you start drawing. 
+
+### update index.html
+
+Add a link to your script in a script tag here. 
+
+```HTML
+<script src="test.js" type="module"></script>
+```
+
+be sure to include `type="module"` since this project is using JS modules!
+
+### Make a pull request
+
+Go to your project GitHub.com go to the **Pull Requests** tab. Click the Green button: **New Pull Request**. Type a message and submit your pull request. 
+
+### Updating your from upstream
+
+Using 
