@@ -1,12 +1,11 @@
 import ctx, { size } from './main.js'
 
-const size = 113;
 const x = 0 * size;
 const y = 2 * size;
 
 // draw my canvas square
 ctx.beginPath();
-ctx.rect(x,y,size,size);
+ctx.rect(x, y, size, size);
 ctx.fillStyle = '#ffbad2';
 ctx.fill();
 
