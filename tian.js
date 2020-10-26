@@ -3,7 +3,7 @@ import ctx, { size } from './mian.js';
 ctx.restore();
 
 const x = 4 * size;
-const x = 4 * size;
+const y = 4 * size;
 
 ctx.fillStyle = 'purple';
 ctx.fill();
