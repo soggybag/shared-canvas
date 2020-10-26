@@ -4,9 +4,8 @@ import ctx, { size } from './main.js'
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
-const size = 113
-const x = 3 * size
-const y = 0 * size
+const x = 0 * size
+const y = 3 * size
 
 // draw a square
 ctx.beginPath()
