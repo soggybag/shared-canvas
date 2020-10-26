@@ -1,7 +1,7 @@
 import ctx, { size } from './main.js'
 
-const x = 1 * size
-const y = 2 * size
+const x = 3 * size
+const y = 4 * size
 
 function chaoDrawing(inputX,inputY){
     //My Drawing
@@ -47,4 +47,4 @@ function chaoDrawing(inputX,inputY){
     ctx.lineWidth=3
     ctx.stroke()
 }
-chaoDrawing(3*113,4*113)
+chaoDrawing(x,y)
