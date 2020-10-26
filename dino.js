@@ -1,7 +1,7 @@
 import ctx, { size } from './main.js'
 
 const size = 113;
-const x = 1 * size;
+const x = 0 * size;
 const y = 2 * size;
 
 // draw my canvas square
