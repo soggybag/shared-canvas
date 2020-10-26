@@ -8,7 +8,7 @@ const y = 3 * size
 // draw a square
 ctx.beginPath()
 ctx.rect(x, y, size, size)
-ctx.fillStyle = '#f0f'
+ctx.fillStyle = '#ff0'
 ctx.fill()
 
 // draw a circle 
