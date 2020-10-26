@@ -5,8 +5,6 @@ ctx.restore();
 const x = 4 * size;
 const y = 4 * size;
 
-// ctx.fillStyle = 'purple';
-
 ctx.beginPath();
 ctx.arc(175, 175, 50, 0, Math.PI * 2, true); // Outer circle
 
