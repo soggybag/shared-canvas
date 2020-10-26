@@ -1,8 +1,4 @@
-
 import ctx, { size } from './main.js'
-
-const canvas = document.querySelector('canvas')
-const ctx = canvas.getContext('2d')
 
 const x = 0 * size
 const y = 3 * size
@@ -12,8 +8,6 @@ ctx.beginPath()
 ctx.rect(x, y, size, size)
 ctx.fillStyle = 'pink'
 ctx.fill()
-
-
 
 // draw a circle
 ctx.beginPath()
