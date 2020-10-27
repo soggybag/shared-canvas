@@ -1,5 +1,7 @@
 import ctx, { size } from './main.js'
 
+ctx.restore()
+
 const x = 2 * size
 const y = 0 * size
 
@@ -28,7 +30,7 @@ ctx.rect(240.125, 50, 14.125, 14.125)
 ctx.fillStyle = 'purple'
 ctx.fill()
 
-// Draw Pupil One
+// Draw Pupil Two
 ctx.beginPath()
 ctx.rect(310.75, 50, 14.125, 14.125)
 ctx.fillStyle = 'purple'

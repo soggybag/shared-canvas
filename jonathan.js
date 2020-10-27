@@ -1,5 +1,8 @@
 import ctx, { size } from './main.js'
 
+//restore context
+ctx.restore()
+
 //my position
 const jwx = 1 * size
 const jwy = 0 * size
@@ -26,7 +29,7 @@ drawRect(jwx + (113 / 2) - 10, jwy + (113 / 2) + 15, 20, 10, "#000000")
 drawRect(jwx + (113 / 2) - 5, jwy + (113 / 2) + 15, 10, 5, "#ffffff")
 
 //signature
-drawText("Jonathan W.", jwx, jwy, 7, "#fff")
+drawText("Spooky", jwx, jwy, 7, "#fff")
 
 // draw a rectangle
 function drawRect(x, y, width, height, color) {
