@@ -1,26 +1,17 @@
-import ctx, {size} from './mian.js'
+import ctx, { size } from './mian.js';
 
-const size = 113;
+ctx.restore();
 
-console.log('???');
+const x = 4 * size;
+const y = 4 * size;
 
-export default ctx;
-export { size };
+ctx.beginPath();
+ctx.arc(175, 175, 50, 0, Math.PI * 2, true); // Outer circle
 
-// drawing
-const tianDraw = () => {
-  ctx.fillStyle = 'purple';
-  ctx.fill();
+ctx.arc(175, 175, 25, 0, Math.PI, false); // Mouth (clockwise)
 
-  ctx.beginPath();
-  ctx.arc(175, 175, 50, 0, Math.PI * 2, true); // Outer circle
-  ctx.moveTo(112, 75);
-  ctx.arc(175, 175, 25, 0, Math.PI, false); // Mouth (clockwise)
-  ctx.moveTo(65, 65);
-  ctx.arc(160, 155, 5, 0, Math.PI * 2, true); // Left eye
-  ctx.moveTo(95, 65);
-  ctx.arc(190, 165, 15, 0, Math.PI * 2, true); // Right eye
-  ctx.stroke();
-};
+ctx.arc(160, 155, 5, 0, Math.PI * 2, true); // Left eye
 
-export default tianDraw;
+ctx.arc(190, 165, 15, 0, Math.PI * 2, true); // Right eye
+
+ctx.fill();
