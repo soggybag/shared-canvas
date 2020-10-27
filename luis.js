@@ -4,8 +4,8 @@ const canvas = document.querySelector('canvas')
 			const ctx = canvas.getContext('2d')
 
 			const size = 113
-			const x = 1 * size
-			const y = 2 * size
+			const x = 3 * size
+			const y = 3 * size
 
 			// draw a square
 			ctx.beginPath()
@@ -27,8 +27,8 @@ const canvas = document.querySelector('canvas')
 			ctx.lineWidth = 3
 			ctx.strokeStyle = '#7B6D8D'
 			ctx.stroke()
-      
-      ctx.beginPath()
+      			
+			ctx.beginPath()
 			// draw half a circle
 			ctx.arc(x + size / 2, y + size / 2, 30, 0, Math.PI * 2)
 			ctx.lineWidth = 3
