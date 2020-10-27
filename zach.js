@@ -4,14 +4,17 @@ const x = 1 * size
 const y = 4 * size
 
 ctx.beginPath()
-ctx.arc(x + size / 2, y + size / 2, 30, 180, Math.PI)
-ctx.lineWidth = 3
-ctx.strokeStyle = '#003399'
+ctx.moveTo(x + (size / 2), y) // Top middle
+ctx.lineTo(x + 113, y + 113) // Bottom right
+ctx.lineTo(x, y + 113) // Bottom left
+ctx.lineTo(x + (size / 2), y) // Back to top middle
+ctx.strokeStyle = 'indigo'
 ctx.stroke()
 
 ctx.beginPath()
-ctx.moveTo(x, y)
-ctx.lineTo(x + 30, y + 60)
-ctx.lineTo(x - 60, y + 60)
-ctx.lineTo(x, y)
+ctx.moveTo(x + (size / 2), y + 113) // Bottom middle 
+ctx.lineTo(x, y) // Top left
+ctx.lineTo(x + 113, y) // Top right
+ctx.lineTo(x + (size / 2), y + 113) // Bottom middle 
+ctx.strokeStyle = 'indigo'
 ctx.stroke()

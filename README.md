@@ -62,6 +62,8 @@ A fork is a copy of the original project that is moved to your github account.
 
 Click the Fork button in the upper right of the page. 
 
+https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project
+
 ### import code 
 
 Your JS file should use this code
@@ -97,11 +99,13 @@ be sure to include `type="module"` since this project is using JS modules!
 
 Go to your project GitHub.com go to the **Pull Requests** tab. Click the Green button: **New Pull Request**. Type a message and submit your pull request. 
 
+https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project
+
 ### Updating your from upstream
 
 Git projects have branches. You'll always have a master branch and you might create other branches. 
 
-https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefbranchabranch
+https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
 An upstream branch can refer to a branch that belongs to source repo you forked. 
 

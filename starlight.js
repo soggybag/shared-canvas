@@ -1,7 +1,9 @@
 import ctx, { size } from './main.js'
 
-const x = size * 2
+const x = size * 3
 const y = 0
+
+ctx.restore()
 
 ctx.beginPath()
 ctx.rect(x, y, size, size)
