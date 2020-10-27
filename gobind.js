@@ -1,7 +1,9 @@
 import ctx, { size } from './main.js'
 
-const x = 4 * size
-const y = 3 * size
+ctx.restore()
+
+const x = 5 * size
+const y = 1 * size
 
 // Draw the Dark Mode icon
 // First, draw a dark circle
