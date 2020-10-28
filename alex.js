@@ -1,5 +1,7 @@
 import ctx, { size } from './main.js'
 
+ctx.restore() 
+
 const x = 2 * size
 const y = 3 * size
 
