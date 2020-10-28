@@ -8,31 +8,31 @@ const jwx = 1 * size
 const jwy = 0 * size
 
 // background square
-drawRect(jwx, jwy, size, size, "#222222")
+drawRect(ctx, jwx, jwy, size, size, "#222222")
 
 // stem
-drawRect(jwx + (113 / 2) - 5, jwy + 15, 10, 25, "#FFFDD0")
+drawRect(ctx, jwx + (113 / 2) - 5, jwy + 15, 10, 25, "#FFFDD0")
 
 // pumpkin
-drawEllipse(jwx + (113 / 2), jwy + (113 / 2) + 10, 50, 40, "#FF7518")
+drawEllipse(ctx, jwx + (113 / 2), jwy + (113 / 2) + 10, 50, 40, "#FF7518")
 
 // eyes black
-drawCircle(jwx + (113 / 2) - 25, jwy + (113 / 2) - 5, 10, "#000000")
-drawCircle(jwx + (113 / 2) + 15, jwy + (113 / 2) - 5, 10, "#000000")
+drawCircle(ctx, jwx + (113 / 2) - 25, jwy + (113 / 2) - 5, 10, "#000000")
+drawCircle(ctx, jwx + (113 / 2) + 15, jwy + (113 / 2) - 5, 10, "#000000")
 
 // eyes white
-drawCircle(jwx + (113 / 2) - 25, jwy + (113 / 2) - 5, 5, "#ffffff")
-drawCircle(jwx + (113 / 2) + 15, jwy + (113 / 2) - 5, 5, "#ffffff")
+drawCircle(ctx, jwx + (113 / 2) - 25, jwy + (113 / 2) - 5, 5, "#ffffff")
+drawCircle(ctx, jwx + (113 / 2) + 15, jwy + (113 / 2) - 5, 5, "#ffffff")
 
 // mouth
-drawRect(jwx + (113 / 2) - 10, jwy + (113 / 2) + 15, 20, 10, "#000000")
-drawRect(jwx + (113 / 2) - 5, jwy + (113 / 2) + 15, 10, 5, "#ffffff")
+drawRect(ctx, jwx + (113 / 2) - 10, jwy + (113 / 2) + 15, 20, 10, "#000000")
+drawRect(ctx, jwx + (113 / 2) - 5, jwy + (113 / 2) + 15, 10, 5, "#ffffff")
 
 //signature
-drawText("Spooky", jwx, jwy, 7, "#fff")
+drawText(ctx, "Spooky", jwx, jwy, 7, "#fff")
 
 // draw a rectangle
-function drawRect(x, y, width, height, color) {
+function drawRect(ctx, x, y, width, height, color) {
     ctx.beginPath()
     ctx.rect(x, y, width, height)
     ctx.fillStyle = color
@@ -40,14 +40,14 @@ function drawRect(x, y, width, height, color) {
 }
 
 // draw a circle
-function drawCircle(x, y, size, color) {
+function drawCircle(ctx, x, y, size, color) {
     ctx.beginPath()
     ctx.arc(x + size / 2, y + size / 2, size, 0, Math.PI * 2)
     ctx.fillStyle = color
     ctx.fill()
 }
 
-function drawText(text, x, y, size, color) {
+function drawText(ctx, text, x, y, size, color) {
     ctx.beginPath()
     ctx.font = size + 'px Helvetica'
     ctx.fillStyle = color
@@ -57,7 +57,7 @@ function drawText(text, x, y, size, color) {
 // draw an ellipse
 // taken from:
 //https://stackoverflow.com/questions/2172798/how-to-draw-an-oval-in-html5-canvas
-function drawEllipse(cx, cy, rx, ry, color) {
+function drawEllipse(ctx, cx, cy, rx, ry, color) {
     ctx.save(); // save state
     ctx.beginPath();
 
