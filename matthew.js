@@ -14,24 +14,24 @@ ctx.fill()
 
 // Draw Eye One
 ctx.beginPath()
-ctx.rect(226, 50, 42.375, 14.125)
+ctx.rect(x + 0, y + 50, 42.375, 14.125)
 ctx.fillStyle = '#FF00FF'
 ctx.fill()
 
 // Draw Eye Two
 ctx.beginPath()
-ctx.rect(296.625, 50, 42.375, 14.125)
+ctx.rect(x + 70, y + 50, 42.375, 14.125)
 ctx.fillStyle = '#FF00FF'
 ctx.fill()
 
 // Draw Pupil One
 ctx.beginPath()
-ctx.rect(240.125, 50, 14.125, 14.125)
+ctx.rect(x + 14.125, y + 50, 14.125, 14.125)
 ctx.fillStyle = 'purple'
 ctx.fill()
 
 // Draw Pupil Two
 ctx.beginPath()
-ctx.rect(310.75, 50, 14.125, 14.125)
+ctx.rect(x + 84.75, y + 50, 14.125, 14.125)
 ctx.fillStyle = 'purple'
 ctx.fill()
