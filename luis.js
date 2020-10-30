@@ -1,8 +1,8 @@
 import ctx, { size } from './main.js'
 
 const size = 113
-const x = 1 * size
-const y = 2 * size
+const x = 3 * size
+const y = 3 * size
 
 // draw a square
 ctx.beginPath()
