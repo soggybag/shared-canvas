@@ -52,11 +52,11 @@ const sprites = []
 
 for (let i = 0; i < 50; i += 1) {
   const x1 = Math.random() * size + x
-	const y1 = Math.random() * size + y
+	const y1 = Math.random() * -size + 10
 	
 	console.log(x1, y1)
 
-  const s = Math.random() * 20 + 10
+  const s = Math.random() * 30 + 10
   const hue = Math.random() * 360
   const color = `hsla(${hue}, 100%, 50%, 0.5)`
   const sprite = new Sprite(x1, y1, s, s, color)
@@ -73,7 +73,7 @@ function update() {
 	ctx.clip()
 	drawFace()
   sprites.forEach((sprite) => {
-    if (sprite.y > y + size) {
+    if (sprite.y > y + size + 40) {
 			sprite.y = Math.random() * -6 + 10
 			sprite.x = Math.random() * size + x
     }
