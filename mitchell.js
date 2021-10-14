@@ -1,4 +1,4 @@
-import ctx, { size } from './main.js'
+import ctx, { size, width, height } from './main.js'
 import Sprite from './Sprite.js'
 
 ctx.restore() 
